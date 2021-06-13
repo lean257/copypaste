@@ -1,0 +1,46 @@
+@import (reference) '~css/global-variables/all.less';
+
+table.root {
+    border: 1px solid @border-color;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    font-size: @medium-copy;
+
+    td, th {
+        border: 1px solid @border-color;
+        text-align: center;
+        padding: 0;
+        &:focus-within {
+            outline: 2px solid @kale;
+            outline-offset: -2px;
+        }
+        word-wrap: break-word;
+    }
+
+    thead th {
+        font-weight: 500;
+    }
+
+    th {
+        background: @background-color--offwhite;
+    }
+
+    button {
+        background-color: transparent;
+    }
+
+    input, button {
+        border: 0;
+        font: inherit;
+        padding: 4px;
+        width: 100%;
+        display: block;
+        line-height: 1.5em;
+        min-height: 1em;
+
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+}
